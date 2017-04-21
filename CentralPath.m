@@ -1,4 +1,4 @@
-%%Newton's method to minimize the function. Obtain the central path
+%Newton's method to minimize the function. Obtain the central path
 %f(x,y) = exp(x+y) + x^2 + 0.5y^2 +x*y -y st 2*x^2 +3*y^2 <= 1
 f_xy = @(x,y)(exp(x+y) + x^2 + 0.5*y^2 + x*y -y ) ;
 fb_xy = @(x,y,t)(t*(exp(x+y) + x^2 + 0.5*y^2 + x*y -y) - log(1-2*x^2-3*y^2)); %with barrier
